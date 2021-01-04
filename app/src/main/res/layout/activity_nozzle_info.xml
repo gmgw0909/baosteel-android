@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meetutech.baosteel.widget.layout.AbsPercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_page_bg"
+    >
+
+  <include
+      android:id="@+id/ic_header"
+      layout="@layout/header_common"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      app:layout_heightPercent="12.8%"
+      />
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/ic_header"
+      >
+
+    <com.meetutech.baosteel.widget.layout.AbsPercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+
+      <com.meetutech.baosteel.widget.layout.AbsPercentLinearLayout
+          android:id="@+id/ll_content"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+
+    </com.meetutech.baosteel.widget.layout.AbsPercentRelativeLayout>
+
+  </ScrollView>
+
+</com.meetutech.baosteel.widget.layout.AbsPercentRelativeLayout>

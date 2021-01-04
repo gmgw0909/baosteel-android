@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meetutech.baosteel.widget.layout.AbsPercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/common_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants"
+    >
+  <ImageView
+      android:id="@+id/iv_background"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/mark_black"
+      android:layout_alignParentBottom="true"
+      app:layout_marginTopPercent="9.06%"
+      android:scaleType="fitXY"
+      />
+
+
+  <com.meetutech.baosteel.widget.layout.AbsPercentRelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_heightPercent="9.06%"
+      android:background="@color/white"
+      >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        app:layout_marginLeftPercent="5%"
+        android:textColor="@color/text_color_h1"
+        />
+
+  </com.meetutech.baosteel.widget.layout.AbsPercentRelativeLayout>
+
+
+  <Button
+      android:id="@+id/btn_play"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:background="@android:drawable/ic_media_play"
+      app:layout_marginTopPercent="28.26%"
+      app:layout_heightPercent="23.2%"
+      app:layout_widthPercent="23.2%"
+      />
+
+</com.meetutech.baosteel.widget.layout.AbsPercentRelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meetutech.baosteel.widget.layout.AbsPercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_page_bg"
+    >
+
+  <include
+      android:id="@+id/ic_header"
+      layout="@layout/header_common"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      app:layout_heightPercent="12.8%"
+      />
+
+  <com.meetutech.chatkit.messages.MessageInput
+      android:id="@+id/input"
+      app:showAttachmentButton="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      app:inputBackground="@color/common_white"
+      app:layout_heightPercent="16%"
+      app:inputHint="@string/hint_enter_a_message"/>
+  <com.meetutech.chatkit.messages.MessagesList
+      android:id="@+id/listView"
+      android:layout_above="@id/input"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_marginTopPercent="12.8%"
+      />
+
+
+</com.meetutech.baosteel.widget.layout.AbsPercentRelativeLayout>

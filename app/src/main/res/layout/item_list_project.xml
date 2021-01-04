@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meetutech.baosteel.widget.layout.AbsPercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <TextView
+      android:id="@+id/tv_name"
+      android:textStyle="bold"
+      android:textColor="@color/text_color_h1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_marginTopPercent="2%"
+      android:singleLine="true"
+      android:ellipsize="end"
+      />
+  <TextView
+      android:id="@+id/tv_description"
+      android:textColor="@color/text_color_h2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_name"
+      android:singleLine="true"
+      android:ellipsize="end"
+      />
+
+</com.meetutech.baosteel.widget.layout.AbsPercentRelativeLayout>

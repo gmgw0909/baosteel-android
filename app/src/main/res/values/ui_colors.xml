@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--Common Color-->
+  <color name="colorGongYelu">#6200EE</color>
+  <color name="colorLogin">#3700B3</color>
+  <color name="common_white">#FFF</color>
+  <color name="common_page_bg">#FBFBFB</color>
+  <color name="common_section_bg">#EEE</color>
+  <color name="common_info_page_bg">#F8F8F8</color>
+  <color name="common_transparent">#0000</color>
+  <color name="common_cover">#745C5C5C</color>
+  <color name="common_dark_deep_cover">#B0000000</color>
+  <color name="common_white_cover">#CFFF</color>
+  <color name="common_white_deep_cover">#EEFFFFFF</color>
+  <color name="common_grey">#745C5C5C</color>
+  <color name="common_light_grey">#CCCCCC</color>
+  <color name="common_section_grey">#EFEFEF</color>
+
+  <!--Text-->
+  <color name="text_color_h1">#515251</color>
+  <color name="text_color_h2">#868688</color>
+  <color name="text_color_h3">#787878</color>
+  <color name="text_color_h4">#B4B4B4</color>
+  <color name="text_color_h5">#C8C8C8</color>
+  <color name="text_color_finished">#9b9b9b</color>
+  <color name="text_color_ing">#7ed321</color>
+  <color name="text_color_ready">#4a90e2</color>
+
+  <color name="text_hyper_link">#42b2f6</color>
+  <!--Divider-->
+  <color name="divider_grey">#D7D7D7</color>
+  <color name="divider_light_grey">#E6E6E6</color>
+
+  <!--Rating Bar color-->
+  <color name="rating_border_color">#fcc107</color>
+  <color name="rating_fill_color">#fed44e</color>
+
+  <!--Route-->
+  <color name="route_line_orange">#FC6721</color>
+
+  <!--Menu-->
+  <color name="sliding_menu_bg">#5e747d</color>
+  <color name="header_light_blue">#99cbfc</color>
+  <color name="light_blue">#42b2f6</color>
+
+  <color name="white">#FFF</color>
+  <color name="none_color">#00000000</color>
+  <color name="bule_overlay">#660D92DD</color>
+  <color name="album_list_feeditem_sel">#fff1f1f1</color>
+  <color name="album_list_feeditem_nor">#fffafafa</color>
+  <color name="custom_alertdialog_transparent">#00ffffff</color>
+
+  <color name="default_text_color_normal">#383838</color>
+  <color name="default_btn_pressed">#3179cb</color>
+  <color name="default_btn_enable_false">#dedfe0</color>
+  <color name="default_btn_red">#FF5E5E</color>
+  <color name="default_window_bg">#f5f5f9</color>
+
+</resources>

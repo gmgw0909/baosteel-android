@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_info_page_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#003D80">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="首页"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/b1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@mipmap/icon1" />
+
+        <ImageButton
+            android:id="@+id/b2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@mipmap/icon2" />
+
+        <ImageButton
+            android:id="@+id/b3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@mipmap/icon3" />
+
+        <ImageButton
+            android:id="@+id/b4"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@mipmap/icon4" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/b5"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@mipmap/icon5" />
+
+        <ImageButton
+            android:id="@+id/b6"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@mipmap/icon6" />
+
+        <ImageButton
+            android:id="@+id/b7"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@mipmap/icon7" />
+
+        <ImageButton
+            android:id="@+id/b8"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:src="@mipmap/icon8" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue_003D80">
+
+            <LinearLayout
+                android:id="@+id/btJS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:drawableLeft="@mipmap/icon_sys"
+                    android:drawablePadding="@dimen/album_dp_15"
+                    android:gravity="center"
+                    android:text="实验室介绍"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/btSM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:drawableLeft="@mipmap/icon_sy"
+                    android:drawablePadding="@dimen/album_dp_15"
+                    android:gravity="center"
+                    android:text="实验说明"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

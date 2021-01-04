@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <title>实验说明</title>
+  <style type="text/css">
+    body {
+      font-family: "PingFangSC-Regular", "PingFangTC-Medium", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+      font-size: 16px;
+      word-spacing: 20px;
+      text-size-adjust: 100%;
+      color: #333;
+      padding: 20px;
+      text-align: justify;
+      word-break: break-all;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .m-b-10 {
+      margin-bottom: 10px;
+    }
+
+    .m-b-20 {
+      margin-bottom: 20px;
+    }
+
+    .p-l-10 {
+      padding-left: 10px;
+    }
+
+    .h1 {
+      font-weight: bold;
+      font-size: 18px;
+      color: #000;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    p {
+      color: #333;
+      line-height: 28px;
+      margin-bottom: 5px;
+      text-indent: 2em;
+    }
+
+    div p {
+      text-indent: 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    table th, table td {
+      border: #333 1px solid;
+      padding: 5px 10px;
+    }
+
+    table th {
+      background-color: #ccc;
+      text-align: left;
+    }
+
+    strong {
+      color: #333;
+    }
+
+    img {
+      outline: none;
+      border: 0;
+    }
+
+    a {
+      text-decoration: none;
+      outline: none;
+      color: #0059ff;
+    }
+
+    .d-flex {
+      display: flex;
+    }
+
+    ul {
+      list-style: none;
+      color: #333;
+    }
+
+    li::before {
+      content: "•";
+      color: #333;
+      font-size: 30px;
+      margin-right: 10px;
+    }
+
+    sub {
+      font-size: 10px;
+    }
+
+    sup {
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+<h2>1.实验分类</h2>
+<p>按照实验烧嘴的功率大小和分类选择不同的炉型进行实验，目前实验室有“明火实验炉”、“高速烧嘴实验炉”“辐射管实验炉”三座实验炉和一台点火烧嘴测试平台，其中明火实验炉有一大一小两个炉膛，一般按照如下规则进行确定适用的炉型</p>
+<table>
+  <tr>
+    <th>序号</th>
+    <th>实验炉</th>
+    <th>适用烧嘴</th>
+    <th>备注</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>明火实验炉大炉膛</td>
+    <td>大功率明火烧嘴1000kw-3000kw</td>
+    <td>亦可做1000kw以下平焰烧嘴</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>明火实验炉小炉膛</td>
+    <td>中功率明火烧嘴400-1000kw</td>
+    <td>亦可做500kw以下平焰烧嘴</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>高速烧嘴实验炉</td>
+    <td>小功率明火烧嘴20-400kw</td>
+    <td>可调节炉温</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>高速烧嘴实验炉</td>
+    <td>U型辐射管烧嘴</td>
+    <td>可调节炉温</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>高速烧嘴实验炉</td>
+    <td>一字型辐射管烧嘴</td>
+    <td>可调节炉温</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>辐射管实验炉</td>
+    <td>W型辐射管烧嘴</td>
+    <td>亦可作U型、P型、一字形等辐射管烧嘴</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>点火烧嘴测试平台</td>
+    <td>各种点火烧嘴</td>
+    <td></td>
+  </tr>
+</table>
+<h2>2.实验测试数据单位</h2>
+<table>
+  <tr>
+    <th>序号</th>
+    <th>项目</th>
+    <th>单位</th>
+    <th>备注</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>温度</td>
+    <td>℃</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>压力</td>
+    <td>Pa</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>标态流量</td>
+    <td>Nm3/h</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>工况流量</td>
+    <td>m3/h</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>O<sub>2</sub></td>
+    <td>%</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>CO<sub>2</sub></td>
+    <td>%</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>CO</td>
+    <td>Ppm</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>NO</td>
+    <td>Ppm</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>NO<sub>2</sub></td>
+    <td>Ppm</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>NO<sub>x</sub></td>
+    <td>Ppm</td>
+    <td></td>
+  </tr>
+</table>
+<h2>3.实验能介</h2>
+<P>实验室目前有高炉煤气、焦炉煤气、转炉煤气、天然气、氮气、氧气，另外还有软水、压缩空气、生活水。</P>
+<div>
+  <p>1)焦炉煤气（V%）</p>
+  <table>
+    <tr>
+      <th>CO<sub>2</sub></th>
+      <th>CO</th>
+      <th>H<sub>2</sub></th>
+      <th>CH<sub>4</sub></th>
+      <th>CnHm</th>
+      <th>O<sub>2</sub></th>
+      <th>N<sub>2</sub></th>
+    </tr>
+    <tr>
+      <td style="font-size:12px">2.68</td>
+      <td style="font-size:14px">6.94</td>
+      <td style="font-size:14px">58.8</td>
+      <td style="font-size:14px">24.42</td>
+      <td style="font-size:14px">2.7</td>
+      <td style="font-size:14px">0</td>
+      <td style="font-size:14px">4.42</td>
+    </tr>
+  </table>
+  <p>说明：焦炉煤气低热值：17,762kJ/Nm<sup>3</sup>(4,242 kcal/Nm<sup>3</sup>),密度<span style="text-decoration:underline">0.455</span>kg/Nm<sup>3</sup></p>
+</div>
+<div>
+  <p>2)天然气（V%）</p>
+  <table>
+    <tr>
+      <th>CO<sub>2</sub></th>
+      <th>CO</th>
+      <th>H<sub>2</sub></th>
+      <th>CH<sub>4</sub></th>
+      <th>CnHm</th>
+      <th>O<sub>2</sub></th>
+      <th>N<sub>2</sub></th>
+    </tr>
+    <tr>
+      <td>0.58</td>
+      <td>0.58</td>
+      <td>0</td>
+      <td>98.1</td>
+      <td>0.6</td>
+      <td>0</td>
+      <td>0.7</td>
+    </tr>
+  </table>
+  <p>说明：天然气低热值：35,564kJ/Nm<sup>3</sup>(8,500kcal/Nm<sup>3</sup>),密度<span style="text-decoration:underline">0.74</span>kg/Nm<sup>3</sup></p>
+</div>
+<h2>4.测试仪表</h2>
+<table>
+  <tr>
+    <th>测试项目</th>
+    <th>被测介质 (或测量部位)</th>
+    <th>采用的仪器仪表</th>
+    <th>测量精度</th>
+    <th>测量范围</th>
+  </tr>
+  <tr>
+    <td rowspan="7">常规流量</td>
+    <td>高炉煤气（总管压力8KPa）</td>
+    <td>气体涡轮流量计</td>
+    <td>2%</td>
+    <td>13-4000Nm<sup>3</sup>/h</td>
+  </tr>
+  <tr>
+    <td>焦炉煤气（总管压力6KPa）</td>
+    <td>孔板流量计</td>
+    <td>3%</td>
+    <td>8-2000Nm<sup>3</sup>/h</td>
+  </tr>
+  <tr>
+    <td>转炉煤气（总管压力12KPa）</td>
+    <td>气体涡轮流量计</td>
+    <td>2%</td>
+    <td>8-2500<sup>3</sup>/h</td>
+  </tr>
+  <tr>
+    <td>天然气（总管压力20KPa）</td>
+    <td>气体涡轮流量计</td>
+    <td>2%</td>
+    <td>6-1000Nm<sup>3</sup>/h</td>
+  </tr>
+  <tr>
+    <td>氮气（总管压力20KPa）</td>
+    <td>孔板流量计</td>
+    <td>3%</td>
+    <td>50-2500Nm<sup>3</sup>/h</td>
+  </tr>
+  <tr>
+    <td rowspan="2">空气（总管压力13KPa）</td>
+    <td>涡轮流量计</td>
+    <td>2%</td>
+    <td>13-2500Nm<sup>3</sup>/h</td>
+  </tr>
+  <tr>
+    <td>孔板</td>
+    <td>3%</td>
+    <td>2000-10000Nm<sup>3</sup>/h</td>
+  </tr>
+  <tr>
+    <td rowspan="5">小微流量</td>
+    <td>各种介质(压力同常规压力)</td>
+    <td>气体涡轮流量计</td>
+    <td>2%</td>
+    <td>1-20Nm<sup>3</sup>/h</td>
+  </tr>
+  <tr>
+    <td>天然气</td>
+    <td>质量流量计</td>
+    <td>3%</td>
+    <td>0.1-12Nm<sup>3</sup>/h</td>
+  </tr>
+  <tr>
+    <td>焦炉煤气</td>
+    <td>质量流量计</td>
+    <td>3%</td>
+    <td>0.1-20Nm<sup>3</sup>/h</td>
+  </tr>
+  <tr>
+    <td>空气</td>
+    <td>气体涡轮流量计</td>
+    <td>2%</td>
+    <td>20-430Nm<sup>3</sup>/h</td>
+  </tr>
+  <tr>
+    <td>空气</td>
+    <td>质量流量计</td>
+    <td>3%</td>
+    <td>1-60Nm<sup>3</sup>/h</td>
+  </tr>
+  <tr>
+    <td rowspan="2">压  力</td>
+    <td>空气管道</td>
+    <td>EJA压力变送器</td>
+    <td rowspan="2">±0.2%</td>
+    <td>0-20KPa</td>
+  </tr>
+  <tr>
+    <td>燃气管道</td>
+    <td>EJA压力变送器</td>
+    <td>0-20KPa</td>
+  </tr>
+  <tr>
+    <td rowspan="4">温  度</td>
+    <td>明火炉、辐射管炉温度</td>
+    <td>K型热电偶</td>
+    <td rowspan="4">±1℃</td>
+    <td>0-1300℃</td>
+  </tr>
+  <tr>
+    <td>高速烧嘴炉</td>
+    <td>S型热电偶</td>
+    <td>0-1500℃</td>
+  </tr>
+  <tr>
+    <td>空气、燃气</td>
+    <td>热电阻</td>
+    <td>0-800℃</td>
+  </tr>
+  <tr>
+    <td>环境温度</td>
+    <td>温度表</td>
+    <td>0-50℃</td>
+  </tr>
+  <tr>
+    <td rowspan="2">成  分</td>
+    <td>烟气中CO、O2、Nox等</td>
+    <td>MRU 烟气分析仪</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>燃气</td>
+    <td>数据来自宝钢能环部</td>
+    <td>±1%</td>
+    <td></td>
+  </tr>
+</table>
+<h2>5.稳定工况说明</h2>
+<p>工况稳定是烧嘴性能真实体现的必要条件，工况稳定包括：能介成分、空煤气流量、烧嘴前空煤气压力、炉温、炉压、烟气成分等的稳定。</p>
+<p>(1)燃烧介质的成分稳定，其热值偏差≤1%。</p>
+<p>(2)燃烧介质的流量波动小，其偏差≤±2%。</p>
+<p>(3)空气的流量波动小，其偏差≤±2%。</p>
+<p>(4)烧嘴前空煤气压力稳定，且能够保持管道压力为正压，当嘴前管道有孔板时，保持孔板上游压力为正压。</p>
+<p>(5)炉温处于相对稳态，在1分钟内炉温波动小于5度。当烧嘴功率大于3Mw时，在1分钟内炉温波动小于10度。</p>
+<p>(6)炉压控制在正压0-30 Pa的合理区间。对于间接烧嘴，辐射管内内压力控制满足工艺需求。</p>
+<p>(7)烟气成分中的氧含量波动在10%以内。</p>
+<p>(8)空气流量、煤气流量、烟气中氧含量三者之间的测试数据与理论燃烧计算数据的偏差小于10%。</p>
+<p>(9)以上全部满足要求后，稳定时间不小于3分钟。</p>
+<h2>6.实验调节精度</h2>
+<p>实验过程中，管道介质的波动、风机设备震动、电压的变化、炉内气流扰动等原因均会造成数据的波动。燃气及空气的测量在某一测试工况相对稳定的状态，取平均值，数据的读取满足以下精度要求：</p>
+<p>a)温度：±1 ℃；</p>
+<p>b)压力：±2%；</p>
+<p>c)流量：±2%；</p>
+<p>d)低位热值：±3%；（实验用气与烧嘴设计燃气的低位热值差值）</p>
+<h2>7.明火实验炉介绍</h2>
+<p>宝钢热工设备实验（标定）中心明火实验炉设有燃气供配气系统、助燃风系统、排烟系统、冷却水系统等配套设施。</p>
+<p>明火实验炉炉体外形尺寸约为：长×宽×高—12×4×3m，沿炉长方向上分为6段，可根据实验需要进行任意拆卸与组合。每段一侧设置一个排烟口，另一侧设置一个烧嘴安装接口和窥视口。炉子两端及一侧面都设置有可活动调节的烧嘴安装基板，用于安装各种规格的侧装烧嘴。</p>
+<p>炉子每一段的顶部均开有开孔，设置有可活动调节的烧嘴安装基板，用于安装各种规格的平焰烧嘴。</p>
+<p>炉子两端面各设置一个外置式工业电视，以对炉内火焰场进行观察与监视。</p>
+<p>明火实验炉内布置一个完整的空间温度测试网，用以测量炉内不同位置的炉温，炉温是一个综合性温度概念，介于炉壁和炉气温度之间。炉内温度分布对均匀加热，降低NOx有重要的意义，也是烧嘴结构设计的重点。</p>
+<p>为检测侧装烧嘴的炉温及火焰温度场，炉内布置一套立体测温网，共有55个测温点，并可根据客户的需求进行扩充。</p>
+<p>说明：热电偶沿炉长布置间距500mm，炉宽方向500mm，水平高度与烧嘴中心重合，节点左上一个测点为中心向上布置，间距400mm，节点左上二个测点为中心向上布置，间距300mm，节点右下一个测点为中心向下布置，间距300mm。</p>
+<p>我们用烧嘴在不同功率下的温度场曲线显示烧嘴的这一指标（单位：℃），为区分测试时不同的功率对温度场的影响，温度场曲线和烧嘴功率同时标识。标定从两方面进行验证，一是在额定工况下，记录炉内各点温度，二是在不同功率下，记录炉内温度分布。 </p>
+<h2>8.辐射管实验炉介绍</h2>
+<p>辐射管实验炉设有燃气供配气系统、助燃风系统、排烟系统、冷却风系统等配套设施。辐射管实验炉炉体外形尺寸约为：长×宽×高—3.1×1.5×2.2m，沿炉长方向上两侧分分别设置冷却风管，风管上带阀门，可根据实验需要进行任意拆卸与组合。炉子本体不设置排烟口，烟气通过烧嘴的排烟管与烟道连接进行排烟。炉子一侧设置炉门，可以在需要时打开炉门进行操作。</p>
+<p>炉子端部设置有可活动调节的烧嘴安装基板，用于安装各种规格的辐射管烧嘴。</p>
+<p>辐射管炉主要检测辐射管管壁温度，炉子内部根据需要布置热电偶，同时辐射管上也布置热电偶，便于检测记录辐射管表面温度。辐射管炉内在炉子中心设置一支热电偶(编号21)作为炉温检测热电偶。</p>
+<h2>9.实验注意事项</h2>
+<p>a)注意观察炉内温控网热电偶的温度值，当超过1300度时，及时关闭煤气（燃气），助燃风不停，并加大助燃风量，待平均炉温低于500度时，再继续实验进程。</p>
+<p>b)实验过程，专人观察着火情况（炉温＜1000度时），发现熄火，立即告知实验操作人员关闭煤气切断阀。</p>
+<p>c)实验过程，注意观察冷却水系统的各点温度，通过调整各分支管路的流量，确保各子系统正常运行。当水箱水位低于800mm时，及时进行补水作业，当水温超过55度，停止作业。</p>
+<p>d)烟气成分中CO含量高（超过500 PPm），但氧含量正常，及时观察火焰燃烧情况；</p>
+<p>e)测试过程中及时调整排烟风机的抽风量，防止明火炉大量热烟气外溢。</p>
+<p>f)火焰形状的拍摄要在关键部位进行定格拍摄不小于5秒，以保证清晰度，关键部位包括：喷口、火焰长度、火焰宽度等。</p>
+<p>g)对火焰异常现象进行定格拍摄，如脱火现象、回火现象、喘振现象、发飘发散现象等。</p>
+</body>
+</html>

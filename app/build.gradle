@@ -1,0 +1,118 @@
+apply plugin: 'com.android.application'
+
+android {
+
+  compileSdkVersion 26
+  buildToolsVersion '26.0.2'
+  defaultConfig {
+    applicationId "com.meetutech.baosteel"
+    minSdkVersion 15
+    targetSdkVersion 26
+    versionCode 23
+    versionName "1.0.1_20190121"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    resValue "string", "updatefun_provider_file_authorities", "com.meetutech.baosteel.fileprovider"
+    externalNativeBuild {
+      cmake {
+        cppFlags "-frtti -fexceptions"
+      }
+    }
+
+    javaCompileOptions {
+      annotationProcessorOptions {
+        arguments = [ moduleName : project.getName() ]
+      }
+    }
+
+    lintOptions {
+      checkReleaseBuilds false
+      abortOnError false
+    }
+
+    compileOptions {
+      sourceCompatibility JavaVersion.VERSION_1_8
+      targetCompatibility JavaVersion.VERSION_1_8
+    }
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+  externalNativeBuild {
+    cmake {
+      path "CMakeLists.txt"
+    }
+  }
+    ndkVersion '20.0.5594570'
+}
+allprojects {
+  repositories {
+    maven { url "https://jitpack.io" }
+  }
+}
+dependencies {
+  compile fileTree(include: ['*.jar'], dir: 'libs')
+  androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    exclude group: 'com.android.support', module: 'support-annotations'
+  })
+  testCompile 'junit:junit:4.12'
+  compile 'com.android.support.constraint:constraint-layout:1.0.2'
+  compile 'me.relex:circleindicator:1.2.2@aar'
+  compile 'com.kyleduo.switchbutton:library:1.4.5'
+  compile 'com.github.GrenderG:Toasty:1.1.5'
+  compile 'com.squareup.picasso:picasso:2.5.2'
+  compile 'com.squareup.retrofit:retrofit:1.6.1'
+  compile 'com.squareup.retrofit2:retrofit-mock:latest.release'
+  compile 'org.greenrobot:eventbus:3.0.0'
+  compile 'com.snappydb:snappydb-lib:0.5.2'
+  compile 'com.esotericsoftware.kryo:kryo:2.24.0'
+  compile 'com.android.support:appcompat-v7:25.1.1'
+  compile 'com.android.support:design:25.1.1'
+  compile 'com.google.android:flexbox:0.2.5'
+  compile 'com.daimajia.easing:library:2.0@aar'
+  compile 'com.daimajia.androidanimations:library:2.2@aar'
+  compile 'com.jakewharton:butterknife:8.5.1'
+  compile 'com.alibaba:arouter-api:1.2.1.1'
+  compile 'com.jude:rollviewpager:1.4.6'
+  compile 'com.yanzhenjie:album:1.0.7'
+  compile 'com.kishan.askpermission:askpermission:1.0.3'
+  compile 'com.iarcuschin:simpleratingbar:0.1.5'
+  compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+  compile 'me.relex:circleindicator:1.2.2@aar'
+  compile 'org.adw.library:discrete-seekbar:1.0.1'
+  compile 'com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:0.7.2'
+  compile 'com.umeng.analytics:analytics:latest.integration'
+  compile 'cn.hugeterry.updatefun:updatefun:2.0.6'
+  compile 'com.lzy.widget:ninegridview:0.2.0'
+  compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+  compile 'com.ksyun.media:libksyplayer-java:2.1.1'
+  compile 'com.ksyun.media:libksyplayer-armv7a:2.1.1'
+  compile 'com.ksyun.media:libksyplayer-arm64:2.1.1'
+  compile 'com.ksyun.media:libksyplayer-armv5:2.1.0'
+  //icons
+  compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
+  // (v4.5)
+  compile 'com.joanzapata.iconify:android-iconify-entypo:2.2.2'
+  // (v3,2015)
+  compile 'com.joanzapata.iconify:android-iconify-typicons:2.2.2'
+  // (v2.0.7)
+  compile 'com.joanzapata.iconify:android-iconify-material:2.2.2'
+  // (v2.0.0)
+  compile 'com.joanzapata.iconify:android-iconify-material-community:2.2.2'
+  // (v1.4.57)
+  compile 'com.joanzapata.iconify:android-iconify-meteocons:2.2.2'
+  // (latest)
+  compile 'com.joanzapata.iconify:android-iconify-weathericons:2.2.2'
+  // (v2.0)
+  compile 'com.joanzapata.iconify:android-iconify-simplelineicons:2.2.2'
+  // (v1.0.0)
+  compile 'com.joanzapata.iconify:android-iconify-ionicons:2.2.2'
+  // (v2.0.1)
+  annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+  compile 'com.veken:chart_view:1.0.2'
+  annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
+  compile project(path: ':SlidingMenu')
+  compile files('libs/pushservice-5.8.0.9.jar')
+}

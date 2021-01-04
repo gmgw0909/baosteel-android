@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="progress_loading">加载中</string>
+
+  <!--Header-->
+  <string name="header_back_btn">返回</string>
+
+  <!--Button-->
+  <string name="btn_about">公司简介</string>
+  <string name="btn_sample">项目案例</string>
+  <string name="btn_login">登录</string>
+  <string name="btn_download">下载</string>
+  <string name="btn_cancel">取消</string>
+  <string name="btn_forget_pwd">忘记密码</string>
+
+  <!--TextView-->
+  <string name="txt_setting_version">版本号 V1.0.0</string>
+  <string name="txt_setting_service">《服务条款》</string>
+  <string name="txt_setting_privacy">《隐私政策》</string>
+  <string name="txt_setting_and">以及</string>
+  <string name="txt_setting_logout">登出</string>
+
+  <string name="txt_project_title">项目列表</string>
+  <string name="txt_experiment_title">实验列表</string>
+  <string name="txt_notification_title">系统消息</string>
+  <string name="txt_exp_advice_title">专家建议</string>
+  <string name="txt_exp_advice_submit_title">提交建议</string>
+  <string name="txt_report_download_title">项目-报告下载</string>
+  <string name="txt_experiment_monitor_title"
+      formatted="false">%s-实时监控</string>
+  <string name="txt_experiment_list_duration_no_endtime"
+      formatted="false">开始：%s，预计：%d小时</string>
+  <string name="txt_experiment_list_duration"
+      formatted="false">开始：%s，结束：%s</string>
+
+  <string name="txt_gather_num" formatted="false">采集点个数：%d</string>
+
+  <string name="btn_chat_voice">录音</string>
+  <string name="btn_chat_gallery">图片</string>
+  <string name="btn_chat_video">视频</string>
+  <string name="btn_select_gallery">选择图片</string>
+  <string name="default_audio_duration">未知时长</string>
+
+  <!--Experiment Info-->
+  <string name="txt_exp_serialNumber">实验编号：</string>
+  <string name="txt_exp_project">所属项目：</string>
+  <string name="txt_exp_furnace">所属实验炉：</string>
+  <string name="txt_exp_startTime">实验时间：</string>
+  <string name="txt_exp_duration">预计耗时：</string>
+  <string name="txt_exp_description">实验说明：</string>
+  <string name="txt_exp_approval">审批结果：</string>
+
+  <string name="btn_chat">实时沟通</string>
+  <string name="btn_rating_exp">评价实验</string>
+  <string name="btn_realtime_data">实时数据</string>
+  <string name="btn_data_analysis">数据分析</string>
+  <string name="btn_furnace_info">烧嘴参数</string>
+  <string name="btn_post">提交</string>
+
+  <!--Nozzle Info-->
+  <string name="nozzle_base_param">基本参数</string>
+  <string name="nozzle_serialNumber">烧嘴编号</string>
+  <string name="nozzle_type">烧嘴类型</string>
+  <string name="nozzle_medium">烧嘴能介</string>
+  <string name="nozzle_pointGunType">点火枪类型</string>
+  <string name="nozzle_pointGunMedium">点火枪能介</string>
+  <string name="nozzle_variableList">变量列表</string>
+
+  <string name="txt_setting_title">设置</string>
+  <string name="txt_setting_push_switch">开启App推送</string>
+  <string name="txt_setting_font_large">字体-大（16pt）</string>
+  <string name="txt_setting_font_medium">字体-中（14pt）</string>
+  <string name="txt_setting_font_small">字体-小（12pt）</string>
+  <!--Hint-->
+  <string name="hint_phone">手机号</string>
+  <string name="hint_password">密码</string>
+
+  <string name="normal">按住 说话</string>
+  <string name="recording">松开 结束</string>
+  <string name="want_to_cancle">松开手指，取消发送</string>
+  <string name="shouzhishanghua">手指上滑，取消发送</string>
+  <string name="tooshort">录音时间过短</string>
+  <string name="toolong">录音时间过长</string>
+
+</resources>
