@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.internal.LinkedTreeMap;
 import com.meetutech.baosteel.R;
@@ -271,12 +272,13 @@ public class OnePartActivity extends BaseActivity {
 
                     @Override
                     public void failure(RetrofitError error) {
-                        handler.postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                refreshData();
-                            }
-                        }, 2000);
+                        Toast.makeText(OnePartActivity.this, "error", Toast.LENGTH_SHORT).show();
+//                        handler.postDelayed(new Runnable() {
+//                            @Override
+//                            public void run() {
+//                                refreshData();
+//                            }
+//                        }, 2000);
                     }
                 });
     }
