@@ -100,6 +100,8 @@ public class OnePartActivity extends BaseActivity {
     LinearLayout ll1;
     @BindView(R.id.ll2)
     LinearLayout ll2;
+    @BindView(R.id.ll_chart)
+    LinearLayout llChart;
     @BindView(R.id.chart_view)
     LineChartView lineChartView;
     MyAdapter cAdapter;
@@ -163,6 +165,9 @@ public class OnePartActivity extends BaseActivity {
             case "I型辐射管烧嘴":
                 count = 5;
                 break;
+        }
+        if (title.equals("点火枪")) {
+            llChart.setVisibility(View.GONE);
         }
         for (int i = 0; i < count; i++) {
             ChartBean lineChartBean = new ChartBean();

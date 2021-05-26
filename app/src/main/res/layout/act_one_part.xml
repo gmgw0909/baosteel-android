@@ -380,52 +380,59 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <View
+            <LinearLayout
+                android:id="@+id/ll_chart"
                 android:layout_width="match_parent"
-                android:layout_height="8dp"
-                android:background="@color/common_info_page_bg" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:text="中轴温度组"
-                android:textColor="@color/black"
-                android:textSize="@dimen/album_sp_16"
-                android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/common_info_page_bg" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/white_three" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="中轴温度组"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/album_sp_16"
+                    android:textStyle="bold" />
 
-            <com.meetutech.baosteel.widget.MyGridView
-                android:id="@+id/gridView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:columnWidth="10dp"
-                android:numColumns="2" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white_three" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="8dp"
-                android:background="@color/common_info_page_bg" />
+                <com.meetutech.baosteel.widget.MyGridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnWidth="10dp"
+                    android:numColumns="2" />
 
-            <com.veken.chartview.view.LineChartView
-                android:id="@+id/chart_view"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginTop="@dimen/dp10"
-                android:paddingRight="20dp"
-                app:clickable="true"
-                app:defaultStrokeWidth="0.5dp"
-                app:defaultTextSize="13sp"
-                app:endColor="@color/endColor"
-                app:isNeedBg="true"
-                app:pointClickRadius="2dp"
-                app:pointDefaultRadius="2dp"
-                app:showPicResource="@mipmap/ic_launcher"
-                app:startColor="@color/startColor" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/common_info_page_bg" />
+
+                <com.veken.chartview.view.LineChartView
+                    android:id="@+id/chart_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:paddingRight="20dp"
+                    app:clickable="true"
+                    app:defaultStrokeWidth="0.5dp"
+                    app:defaultTextSize="13sp"
+                    app:endColor="@color/endColor"
+                    app:isNeedBg="true"
+                    app:pointClickRadius="2dp"
+                    app:pointDefaultRadius="2dp"
+                    app:showPicResource="@mipmap/ic_launcher"
+                    app:startColor="@color/startColor" />
+            </LinearLayout>
 
             <View
                 android:layout_width="match_parent"
