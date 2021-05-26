@@ -218,7 +218,11 @@ public class OnePartActivity extends BaseActivity {
                                 List<ChartBean> lineChartBeanList = new ArrayList<>();
                                 for (int i = 0; i < result.getAxistemperaturegroup().size(); i++) {
                                     ChartBean lineChartBean = new ChartBean();
-                                    lineChartBean.setValue(NumberUtils.getTwoN(getHead(result.getAxistemperaturegroup().get(i)).getValue()));//y
+                                    if (getHead(result.getAxistemperaturegroup().get(i)).getValue() > 0) {
+                                        lineChartBean.setValue(NumberUtils.getTwoN(getHead(result.getAxistemperaturegroup().get(i)).getValue()));//y
+                                    } else {
+                                        lineChartBean.setValue("0.01");//y
+                                    }
                                     lineChartBean.setDate(String.valueOf(i));//x
                                     lineChartBeanList.add(lineChartBean);
                                 }
