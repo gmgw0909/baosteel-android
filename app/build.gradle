@@ -115,4 +115,6 @@ dependencies {
   annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
   compile project(path: ':SlidingMenu')
   compile files('libs/pushservice-5.8.0.9.jar')
+
+  implementation files('libs/MiyataOpenUISdk-1.0.0.aar')
 }

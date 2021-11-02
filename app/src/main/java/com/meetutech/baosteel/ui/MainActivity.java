@@ -18,6 +18,7 @@ import com.meetutech.baosteel.model.http.ProjectMenu;
 import com.meetutech.baosteel.ui.base.BaseActivity;
 import com.meetutech.baosteel.utils.ViewUtils;
 import com.squareup.picasso.Picasso;
+import com.ximalaya.ting.android.miyataopensdk.XmUISdk;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -336,8 +337,9 @@ public class MainActivity extends BaseActivity
                         .putExtra("TITLE", "I型辐射管烧嘴"));
                 break;
             case R.id.b8:
-                startActivity(new Intent(MainActivity.this, OnePartActivity.class)
-                        .putExtra("TITLE", "点火枪"));
+//                startActivity(new Intent(MainActivity.this, OnePartActivity.class)
+//                        .putExtra("TITLE", "点火枪"));
+                XmUISdk.getInstance().startMain(this);
                 break;
         }
     }
